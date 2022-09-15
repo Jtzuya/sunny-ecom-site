@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:wght@500&display=swap');
+
+:root {
+  --bgClr-primary: #fffff;
+  --bgClr-testOne: papayawhip;
+  --bgClr-bloody: #B91122;
+
+  --textClr-primary: #292019;
+  --textClr-secondary: #000000;
+  --textClr-extra: #72696A;
+  --textClr-inherit: #000000;
+
+  --desktopW-1440px: 1440px;
+
+  --desktopPaddingInline-1440px: 90px;
+
+  --reserveFonts: -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  --heading-font: 'Abhaya Libre';
+  --subheading-font: 'Poppins';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--heading-font), var(--reserveFonts);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: var(--subheading-font), var(--reserveFonts);
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: var(--bgClr-primary);
+  }
+}
+
+.w-desk {
+  /* max-width: var(--desktopW-1440px); */
+  /* background-color: var(--bgClr-testOne); */
+  margin-inline: auto;
+  padding-inline: var(--desktopPaddingInline-1440px);
+}
+
+.index__case {
+  max-width: 1794px;
+  margin-inline: auto;
+  /* background-color: var(--bgClr-testTwo); */
+}
